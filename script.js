@@ -67,6 +67,8 @@ function game() {
     let playerSelection;
     let result;
 
+    console.log(`Your score: ${playerScore}     Computer's Score: ${computerScore}`);
+
     while (continueGame == true) {
         playerSelection = window.prompt('Rock, Paper or Scissors?');
         computerSelection = computerPlay();
@@ -76,6 +78,7 @@ function game() {
         } else if (result === 'computer') {
             computerScore += 1;
         }
+        console.log(`Your score: ${playerScore}     Computer's Score: ${computerScore}`);
 
         if (computerScore > 4 || playerScore > 4) {
             continueGame = false;
