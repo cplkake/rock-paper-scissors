@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="header-container">
+        <p class="header-message">Are you a Rock Paper Scissors World Champion in the making?</p>
+        <p class="sub-header-message">Take on F.L.U.K.E. to find out!</p>
+    </div>
+    <div class="arena">
+        <div class="player corner" id="player-corner">
+            <div class="player name">
+                <p>Player</p>
+            </div>
+            <div class="player score-container">
+                <p>Score: <span id="player-score">0</span></p>
+            </div>
+            <div class="player choices">
+                <div class="player rock icon-container">
+                    <img src="./images/rock.png" alt="rock" class="player icon">
+                </div>
+                <div class="player paper icon-container">
+                    <img src="./images/paper.png" alt="paper" class="player icon">
+                </div>
+                <div class="player scissors icon-container">
+                    <img src="./images/scissors.png" alt="scissors" class="player icon">
+                </div>
+            </div>
+            <div class="player feedback-container">
+                <p id="user-feedback-message"></p>
+            </div>
+        </div>
+        <div class="computer corner" id="computer-corner">
+            <div class="computer name">
+                <p>F.L.U.K.E.</p>
+            </div>
+            <div class="computer score-container">
+                <p>Score: <span id="computer-score">0</span></p>
+            </div>
+            <div class="computer choices">
+                <div class="computer rock icon-container">
+                    <img src="./images/rock.png" alt="rock" class="computer icon">
+                </div>
+                <div class="computer paper icon-container">
+                    <img src="./images/paper.png" alt="paper" class="computer icon">
+                </div>
+                <div class="computer scissors icon-container">
+                    <img src="./images/scissors.png" alt="scissors" class="computer icon">
+                </div>
+            </div>
+            <div class="computer feedback-container">
+                <p id="computer-feedback-message"></p>
+            </div>
+        </div>
+    </div>
+    <div id="final-message-container"></div>
     <script src="script.js"></script>
 </body>
 </html>
